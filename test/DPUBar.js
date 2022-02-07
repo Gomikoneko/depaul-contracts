@@ -1,12 +1,12 @@
 const { ethers } = require("hardhat");
 const { expect } = require("chai");
 
-describe("TokenBar", function () {
+describe("DPUBar", function () {
 
     before(async function () {
         this.signers = await ethers.getSigners();
-        this.Token = await ethers.getContractFactory("Token");
-        this.Bar = await ethers.getContractFactory("TokenBar");
+        this.Token = await ethers.getContractFactory("DPU");
+        this.Bar = await ethers.getContractFactory("DPUBar");
         this.owner = this.signers[0];
         this.alice = this.signers[1];
         this.bob = this.signers[2];
